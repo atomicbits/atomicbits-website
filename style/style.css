@@ -1,0 +1,173 @@
+body {
+    background: #222;
+    color: #fff;
+    font: 18px 'Montserrat', sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+html, body, #main, .section, .content {
+    height: 100%;
+}
+#logo {
+    margin: 0;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    opacity: 1.0;
+    transition: opacity .5s;
+}
+.mouse #logo:hover {
+    opacity: 0.8;
+}
+#logo a, #logo img, #footer a {
+    display: block;
+}
+#scrollhint {
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: rgba(255,255,255,0.3) transparent transparent transparent;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -10px;
+}
+.section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-color: rgba(0,0,0,0.3);
+    transition: background-color .5s;
+}
+.content h2 {
+    margin: 0;
+    text-transform: uppercase;
+}
+.content h3 {
+    margin: 0;
+}
+.half, #footer {
+    display: flex;
+}
+.half .section {
+    flex: 1;
+}
+.mouse .half .content:hover, .touch .half .content {
+    background-color: rgba(0,0,0,0);
+}
+#contact {
+    background-color: rgba(0,0,0,0.3);
+    height: auto !important;
+}
+#mail {
+    max-width: 360px;
+    padding: 100px 20px;
+}
+#mail input, #mail textarea, #mail select {
+    width: 100%;
+    color: #fff;
+    font: inherit;
+    background: none;
+    outline: none;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding: 20px 0 10px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: border-bottom-color .5s;
+}
+#mail textarea {
+    height: 150px;
+    resize: none;
+}
+#mail input[type="submit"] {
+    cursor: pointer;
+    background: #00c8c8;
+    border: 0;
+    padding: 0;
+    margin-top: 10px;
+    height: 60px;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+#mail input[type="text"]:focus, #mail textarea:focus, #mail select:focus {
+    border-bottom-color: #fff;
+}
+#mail select {
+    background: url(dropdown.svg) no-repeat right;
+    background-size: 15px;
+}
+#mail option {
+    background: #222;
+    color: #fff;
+}
+::-webkit-input-placeholder {
+    color:#fff;
+    opacity: 1;
+}
+::-moz-placeholder {
+    color:#fff;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color:#fff;
+    opacity: 1;
+}
+#mail .error {
+    border-bottom-color: red !important;
+}
+#footer h3 {
+    flex: 1;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 100px;
+    text-align: center;
+}
+@media (orientation: portrait) {
+    .half {
+        display: block;
+    }
+    .half .section {
+        height: 50% !important;
+    }
+}
+@media (max-width: 720px) {
+    #logo {
+        top: 10px;
+        left: 10px;
+        width: 80px;
+    }
+    #footer {
+        display: block;
+    }
+}
+
+@supports (-webkit-appearance:none) and (not (overflow:-webkit-marquee)) and (not (-ms-accelerator:true)) {
+    .touch, .touch body {
+        overflow: hidden;
+    }
+    .touch #main {
+        overflow-y: scroll;
+    }
+}
