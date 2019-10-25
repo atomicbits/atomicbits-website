@@ -29,9 +29,9 @@ html, body, #main, .section, .content {
 .mouse #logo:hover {
     opacity: 0.8;
 }
-#logo a, #logo img, #footer a {
-    display: block;
-}
+/*#logo a, #logo img, #footer a {*/
+    /*display: block;*/
+/*}*/
 #scrollhint {
     border-style: solid;
     border-width: 10px 10px 0 10px;
@@ -46,15 +46,6 @@ html, body, #main, .section, .content {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.content {
-    display: block; /* block prevents scrolling the content */
-    /*display: flex; this was the original */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50% 50%;
-    background-color: rgba(0,0,0,0.3);
-    transition: background-color .5s;
-}
 .centertitle {
     position: relative;
     float: left;
@@ -63,9 +54,6 @@ html, body, #main, .section, .content {
     transform: translate(-50%, 0%);
     margin: 0;
     text-transform: uppercase;
-}
-.content h3 {
-    margin: 0;
 }
 .half, #footer {
     display: flex;
@@ -116,10 +104,10 @@ html, body, #main, .section, .content {
 #mail input[type="text"]:focus, #mail textarea:focus, #mail select:focus {
     border-bottom-color: #fff;
 }
-#mail select {
-    background: url(dropdown.svg) no-repeat right;
-    background-size: 15px;
-}
+/*#mail select {*/
+    /*background: url(dropdown.svg) no-repeat right;*/
+    /*background-size: 15px;*/
+/*}*/
 #mail option {
     background: #222;
     color: #fff;
@@ -157,9 +145,9 @@ html, body, #main, .section, .content {
         left: 10px;
         width: 180px;
     }
-    #footer {
-        display: block;
-    }
+    /*#footer {*/
+        /*display: block;*/
+    /*}*/
 }
 
 @supports (-webkit-appearance:none) and (not (overflow:-webkit-marquee)) and (not (-ms-accelerator:true)) {
