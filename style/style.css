@@ -47,7 +47,7 @@ html, body, #main, .section, .content {
     background-size: cover;
 }
 .content {
-    display: block;
+    display: block; /* block prevents scrolling the content */
     /*display: flex; this was the original */
     background-position: center;
     background-repeat: no-repeat;
@@ -55,7 +55,7 @@ html, body, #main, .section, .content {
     background-color: rgba(0,0,0,0.3);
     transition: background-color .5s;
 }
-.content h2 {
+.centertitle {
     position: relative;
     float: left;
     top: 50%;
@@ -150,14 +150,7 @@ html, body, #main, .section, .content {
     letter-spacing: 1px;
     text-align: center;
 }
-/*@media (orientation: portrait) {*/
-    /*.half {*/
-        /*display: block;*/
-    /*}*/
-    /*.half .section {*/
-        /*height: 50% !important;*/
-    /*}*/
-/*}*/
+
 @media (max-width: 720px) {
     #logo {
         top: 10px;
@@ -194,24 +187,15 @@ html, body, #main, .section, .content {
     left: 0;
     width: 100%;
     height: 100%;
+}
 
-    /*position: fixed;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    /*min-width: 100%;*/
-    /*min-height: 100%;*/
-    /*width: auto;*/
-    /*height: auto;*/
-    /*z-index: -100;*/
-
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*min-width: 100%;*/
-    /*min-height: 100%;*/
-    /*width: auto;*/
-    /*height: auto;*/
-    /*transform: translateX( -50% )  translateY( -50% );*/
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2); /* darken the bg a bit*/
 }
 
 @media (min-aspect-ratio: 16/9) {
