@@ -47,10 +47,8 @@ html, body, #main, .section, .content {
     background-size: cover;
 }
 .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    display: block;
+    /*display: flex; this was the original */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50% 50%;
@@ -58,6 +56,11 @@ html, body, #main, .section, .content {
     transition: background-color .5s;
 }
 .content h2 {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     margin: 0;
     text-transform: uppercase;
 }
@@ -136,12 +139,15 @@ html, body, #main, .section, .content {
 #mail .error {
     border-bottom-color: red !important;
 }
-#footer h3 {
-    flex: 1;
+#footer {
+    /*flex: 1;*/
+    position: absolute;
     margin: 0;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
     font-size: 24px;
     letter-spacing: 1px;
-    line-height: 100px;
     text-align: center;
 }
 @media (orientation: portrait) {
@@ -169,5 +175,66 @@ html, body, #main, .section, .content {
     }
     .touch #main {
         overflow-y: scroll;
+    }
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /*position: fixed;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+    /*width: auto;*/
+    /*height: auto;*/
+    /*z-index: -100;*/
+
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+    /*width: auto;*/
+    /*height: auto;*/
+    /*transform: translateX( -50% )  translateY( -50% );*/
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('../img/WebBackgroundStill_1.1.1.png') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
     }
 }
