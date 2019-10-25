@@ -173,6 +173,7 @@ html, body, #main, .section, .content {
 
 .fullscreen-bg {
     position: fixed;
+    display: flex;
     top: 0;
     right: 0;
     bottom: 0;
@@ -183,6 +184,7 @@ html, body, #main, .section, .content {
 
 .fullscreen-bg__video {
     position: absolute;
+    display: flex;
     top: 0;
     left: 0;
     width: 100%;
@@ -191,6 +193,7 @@ html, body, #main, .section, .content {
 
 .fullscreen-overlay {
     position: fixed;
+    display: flex;
     top: 0;
     right: 0;
     bottom: 0;
@@ -214,8 +217,18 @@ html, body, #main, .section, .content {
 
 
 @media (max-width: 767px) {
+
+    .centertitle {
+        font-size: 16px;
+    }
+
+    #footer {
+        font-size: 14px;
+    }
+
     .fullscreen-bg {
         background: url('../img/WebBackgroundStill_1.1.1.png') center center / cover no-repeat;
+        overflow: hidden;
     }
 
     .fullscreen-bg__video {
