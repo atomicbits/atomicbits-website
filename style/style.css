@@ -150,14 +150,14 @@ html, body, #main, .section, .content {
     letter-spacing: 1px;
     text-align: center;
 }
-@media (orientation: portrait) {
-    .half {
-        display: block;
-    }
-    .half .section {
-        height: 50% !important;
-    }
-}
+/*@media (orientation: portrait) {*/
+    /*.half {*/
+        /*display: block;*/
+    /*}*/
+    /*.half .section {*/
+        /*height: 50% !important;*/
+    /*}*/
+/*}*/
 @media (max-width: 720px) {
     #logo {
         top: 10px;
