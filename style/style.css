@@ -186,7 +186,7 @@ html, body, #main, .section, .content {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.2); /* darken the bg a bit*/
+    /*background-color: rgba(0,0,0,0.2); !* darken the bg a bit*!*/
 }
 
 @media (min-aspect-ratio: 16/9) {
