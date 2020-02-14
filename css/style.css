@@ -1,0 +1,12 @@
+body {
+    background: #222;
+    color: #fff;
+}
+
+a {
+    color: #004085;
+}
+
+.btn {
+    border-radius: 0;
+}
