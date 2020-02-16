@@ -1,10 +1,70 @@
+/* chosen color palette */
+/* https://coolors.co/57b6cb-cb5d57-3d5a80-98c1d9-e0fbfc */
+/* alternatives that didn't make it */
+/* https://coolors.co/57b6cb-586994-a2abab-b4c4ae-e5e8b6 */
+/* https://coolors.co/57b6cb-cb5d57-ddd8c4-a3c9a8-69a297 */
+
+.original_bootstrap {
+    --primary:#007bff;
+    --secondary:#6c757d;
+    --success:#28a745;
+    --info:#17a2b8;
+    --warning:#ffc107;
+    --danger:#dc3545;
+    --light:#f8f9fa;
+    --dark:#343a40;
+}
+:root {
+    --primary:#3d5a80;
+    --secondary: #98c1d9;
+    --light:#e0fbfc;
+    --dark: #25364d;
+    --highlight: #57b6cb;
+    --success:#28a745;
+    --info:#17a2b8;
+    --warning:#ffc107;
+    --danger:#dc3545;
+    --main-bg-color: #F8F9FA;
+}
+
+
+.palette {
+    --color1: #57b6cb; /* highlight */
+    --color2: #cb5d57; /*  */
+    --color3: #3d5a80; /* primary */
+    --color4: #98c1d9; /* secondary */
+    --color5: #e0fbfc; /* light */
+}
+
 body {
-    background: #222;
-    color: #fff;
+    background: var(--main-bg-color);
+    color: var(--dark);
+    font-family: Roboto, sans-serif;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+h1 {
+    line-height: 3.0;
+    margin: 0;
+}
+
+h2 {
+    line-height: 2.5;
+    margin: 0;
+}
+
+h3 {
+    line-height: 2.6;
+    margin: 0;
+}
+
+p {
+
 }
 
 a {
-    color: #004085;
+    color: var(--highlight);
 }
 
 .btn {

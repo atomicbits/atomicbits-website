@@ -14,7 +14,7 @@
     justify-content: center;
     transition: all 500ms ease-out;
     color: #ecf0f1;
-    background: #648073;
+    background: var(--dark);
 }
 
 .cookiealert.show {
