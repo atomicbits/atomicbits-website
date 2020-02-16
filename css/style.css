@@ -70,3 +70,44 @@ a {
 .btn {
     border-radius: 0;
 }
+
+#logo {
+    margin: 0;
+    /*position: fixed;*/
+    /*top: 20px;*/
+    /*left: 20px;*/
+    width: 300px;
+    opacity: 1.0;
+    transition: opacity .5s;
+}
+
+.nav-popover {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    opacity: 0;
+    justify-content: center;
+    transition: all 200ms ease-out;
+    color: #ecf0f1;
+    background: var(--dark);
+}
+
+.nav-popover.show {
+    opacity: 1;
+    transform: translateY(0%);
+    /*transition-delay: 1000ms;*/
+}
+
+/* remove the ugly highlight around the hamburger menu when clicked */
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+/* remove the line around the hamburger menu */
+.navbar-toggler {
+    border: 0;
+}
+

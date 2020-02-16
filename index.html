@@ -23,7 +23,7 @@
             frame-src 'self';
             default-src 'self';
             script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://www.google-analytics.com https://cdn.jsdelivr.net https://code.jquery.com https://stackpath.bootstrapcdn.com;
-            img-src 'self' https://www.google-analytics.com;
+            img-src 'self' https://www.google-analytics.com data:;
             style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
             font-src 'self' data: https://fonts.gstatic.com;
             form-action 'self';
@@ -55,6 +55,29 @@
     <!-- BEGIN Content body-->
     <!-- - - - - - - - - - -->
 
+    <div id="navbarToggleExternalContent" class="container-md collapse nav-popover">
+      TEST
+    </div>
+
+
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-9 col-md-7 pt-md-2">
+          <div id="logo">
+            <a href="http://atomicbits.io/"><img src="img/Atomic_BITS_logo_with_favicon_color.svg" alt="Atomic BITS"></a>
+          </div>
+        </div>
+        <div class="col-3 col-md-5 pt-md-2">
+          <nav class="navbar navbar-light bg-light float-right">
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
 
 
     <!-- - - - - - - - - -->
@@ -62,16 +85,15 @@
     <!-- - - - - - - - - -->
 
 
-
     <!-- Begin Cookie Alert -->
-    <div class="container-sm alert cookiealert" role="alert">
+    <div class="container-md alert cookiealert" role="alert">
       <div class="row">
         <div class="col-sm-7 col-md-8 col-xl-9">
           <b>We use cookies to guarantee you a better experience on our website.<br>
             <a href="privacy-policy">Learn more about our cookies</a></b>
         </div>
-        <div class="col-sm-5 col-md-4 col-xl-3 text-center my-auto" >
-          <button type="button" class="btn btn-primary btn-md acceptcookies" aria-label="Close" >
+        <div class="col-sm-5 col-md-4 col-xl-3 text-center my-auto">
+          <button type="button" class="btn btn-primary btn-md acceptcookies" aria-label="Close">
             ACCEPT COOKIES
           </button>
         </div>
