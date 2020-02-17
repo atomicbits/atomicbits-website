@@ -71,16 +71,6 @@ a {
     border-radius: 0;
 }
 
-#logo {
-    margin: 0;
-    /*position: fixed;*/
-    /*top: 20px;*/
-    /*left: 20px;*/
-    width: 300px;
-    opacity: 1.0;
-    transition: opacity .5s;
-}
-
 .nav-popover {
     position: fixed;
     display: block;
@@ -90,9 +80,10 @@ a {
     z-index: 999;
     opacity: 0;
     justify-content: center;
-    transition: all 200ms ease-out;
-    color: #ecf0f1;
-    background: var(--dark);
+    transition: all 100ms ease-out;
+    color: var(--primary);
+    /*background: var(--highlight);*/
+    background: transparent;
 }
 
 .nav-popover.show {
@@ -109,5 +100,28 @@ a {
 /* remove the line around the hamburger menu */
 .navbar-toggler {
     border: 0;
+}
+
+.navbar-choice {
+    background: var(--main-bg-color);
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding-left:0;
+        padding-right:0;
+    }
+}
+
+@media (min-width: 1px) {
+    #logo {
+        height: 40px
+    }
+}
+
+@media (min-width: 576px) {
+    #logo {
+        height: 50px
+    }
 }
 
