@@ -4,30 +4,33 @@
 /* https://coolors.co/57b6cb-586994-a2abab-b4c4ae-e5e8b6 */
 /* https://coolors.co/57b6cb-cb5d57-ddd8c4-a3c9a8-69a297 */
 
+/* Store the original bootstrap colors for future reference. */
 .original_bootstrap {
-    --primary:#007bff;
-    --secondary:#6c757d;
-    --success:#28a745;
-    --info:#17a2b8;
-    --warning:#ffc107;
-    --danger:#dc3545;
-    --light:#f8f9fa;
-    --dark:#343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
 }
+
+/* The global CSS variables. */
 :root {
-    --primary:#3d5a80;
+    --primary: #3d5a80;
     --secondary: #98c1d9;
-    --light:#e0fbfc;
+    --light: #e0fbfc;
     --dark: #25364d;
     --highlight: #57b6cb;
-    --success:#28a745;
-    --info:#17a2b8;
-    --warning:#ffc107;
-    --danger:#dc3545;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
     --main-bg-color: #F8F9FA;
 }
 
-
+/* An overview of the color palette. */
 .palette {
     --color1: #57b6cb; /* highlight */
     --color2: #cb5d57; /*  */
@@ -67,10 +70,17 @@ a {
     color: var(--highlight);
 }
 
+/* Larger close buttons. */
+button.close {
+    font-size: 36px
+}
+
+/* We don't like buttons with rounded corners. */
 .btn {
     border-radius: 0;
 }
 
+/* The navigation popover container is transparent to selectively give a smaller sub-area a solid color. */
 .nav-popover {
     position: fixed;
     display: block;
@@ -82,14 +92,12 @@ a {
     justify-content: center;
     transition: all 100ms ease-out;
     color: var(--primary);
-    /*background: var(--highlight);*/
     background: transparent;
 }
 
 .nav-popover.show {
     opacity: 1;
     transform: translateY(0%);
-    /*transition-delay: 1000ms;*/
 }
 
 /* remove the ugly highlight around the hamburger menu when clicked */
@@ -97,15 +105,27 @@ a {
     outline: none;
     box-shadow: none;
 }
+
 /* remove the line around the hamburger menu */
 .navbar-toggler {
     border: 0;
 }
 
+/* The navigation choice area must have a solid background color. */
 .navbar-choice {
     background: var(--main-bg-color);
 }
 
+.videoplaceholder svg {
+    height: 100%;
+    width: 100%;
+}
+
+.favicon-md {
+    width: 40px;
+}
+
+/* The navigation selection list area */
 ul.navbar-selection {
     padding-right: 0;
     padding-left: 0;
@@ -114,22 +134,41 @@ ul.navbar-selection {
     list-style-type: none;
 }
 
+.privacy-cookies {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.social-media {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.social-media img {
+    width: 20px;
+    margin-right: 5px;
+    float: left;
+}
+
+/* Widen the navigation bar on small screens. */
 @media (max-width: 576px) {
     .navbar {
-        padding-left:0;
-        padding-right:0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
+/* Make the logo slightly smaller on small screens. */
 @media (min-width: 1px) {
     #logo {
         height: 40px
     }
 }
 
+/* Normal logo size. */
 @media (min-width: 576px) {
     #logo {
         height: 50px
     }
 }
-
