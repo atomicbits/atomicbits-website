@@ -18,11 +18,11 @@
 
 /* The global CSS variables. */
 :root {
-    --primary: #3d5a80;
+    --primary: #3d5a80; /* rgb(61, 90, 128) */
     --secondary: #98c1d9;
     --light: #e0fbfc;
     --dark: #25364d;
-    --highlight: #57b6cb;
+    --highlight: #57b6cb; /* rgb(87, 182, 203) */
     --success: #28a745;
     --info: #17a2b8;
     --warning: #ffc107;
@@ -68,6 +68,10 @@ p {
 
 a {
     color: var(--highlight);
+}
+
+a.dark {
+    color: var(--dark);
 }
 
 /* Larger close buttons. */
@@ -134,15 +138,23 @@ ul.navbar-selection {
     list-style-type: none;
 }
 
+.footer {
+    font-size: 16px;
+}
+
+.footer-header {
+    margin-bottom: 16px;
+}
+
 .privacy-cookies {
     margin-top: 8px;
     margin-bottom: 10px;
-    font-size: 18px;
+    color: var(--primary);
 }
 
 .social-media {
     margin-top: 8px;
-    font-size: 18px;
+    color: var(--primary);
 }
 
 .social-media img {

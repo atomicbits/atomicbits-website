@@ -5,7 +5,7 @@
  */
 .cookiealert {
     position: fixed;
-    display: block;
+    display: none;
     bottom: 0;
     left: 0;
     right: 0;
@@ -19,6 +19,7 @@
 
 .cookiealert.show {
     opacity: 1;
+    display: block;
     transform: translateY(0%);
     transition-delay: 1000ms;
 }
