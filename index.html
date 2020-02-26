@@ -66,8 +66,10 @@
             <span aria-hidden="true">&times;</span>
           </button>
           <ul class="navbar-selection">
-            <li>About</li>
-            <li>Contact</li>
+<!--            <li>a href="#footer">About</a></li>-->
+            <li>
+              <a href="#footer">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -95,61 +97,148 @@
     <!-- Content-->
 
     <div class="container-lg">
+
       <div class="row">
         <div class="col">
-          <div class="videoplaceholder">
-            <svg width="1612" height="712">
-              <rect width="1600" height="700" style="fill:hsl(214,31%,50%);stroke-width:3;stroke:hsl(214,31%,50%)"/>
-            </svg>
+          <div class="imageplaceholder">
+            <div class="text-dark text-center rw-words">
+              <span class="centered">Software Engineering</span>
+              <span class="centered">Emerging technologies</span>
+              <span class="centered">Building a smart world</span>
+              <span class="centered">with a human touch</span>
+              <span></span>
+            </div>
+            <img class="" src="img/AB-2.jpg" alt="Header image">
           </div>
         </div>
       </div>
+
+      <div class="row px-2 py-5">
+        <div class="col-lg-8">
+          <h2>Agile software development</h2>
+          <p>
+
+            Agile software design processes follow a company's business strategy on its heels, fast and swift.
+            This approach stands out against one-off large-scale projects that are supposed to fulfil a business wish at delivery,
+            but often run miles behind on an abandoned road.
+            The agile way provides short cycles with instant feedback,
+            customer interaction and flexible modalities to pivot and adjust gears on short notice when necessary.
+          </p>
+        </div>
+        <div class="col-lg-4">
+        </div>
+      </div>
+
+      <div class="row px-2 py-5 ">
+        <div class="col-lg-6">
+          <div class="videoplaceholder">
+            <video loop muted autoplay poster="img/night-color_1.7.1.png" class="bg-video lazy-loading">
+              <!-- data-src is moved to src when the video is made visible -->
+              <source data-src="video/AB-web-header_crop.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="col-lg-6 attention">
+          <h2>AI strategy</h2>
+          <p>
+            Artificial Intelligence as an emerging technology is just showing a glimpse today of what will be possible soon.
+            We believe that the sweet spot for realizing truly intelligent AI systems will be where deep learning and
+            computational neuroscience meet. But we're not there yet.
+          </p>
+          <p>
+            In the mean time, the practical applications of deep learning networks grow steadily and put AI in the driving seat
+            for shaping a smarter world.
+            We contribute to this vision by building applications for detecting human distress situations. With an eye on personal
+            privacy and keeping humans in the loop when making important decisions, we can establish a safer society in a
+            responsible manner.
+          </p>
+        </div>
+      </div>
+
+      <div class="row px-2 py-5">
+        <div class="col-lg-8">
+          <h2>Cloud computing</h2>
+          <p>
+            Distributed cloud computing forms the basis for any large IT ecosystem. Making the right architectural decisions
+            early on is one of the most important choices to be made in any software project. A solid architecture allows for
+            flexible scaling "up" and "out" while safeguarding the transactional aspects of the overall system. We have years of
+            experience in general distributed computing principles and the mainstream distributed software architectures.
+            <!-- Building RESTfull service endpoints has been our choice of preference for building distributed APIs on cloud based
+            systems, such as Amazon AWS. -->
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <!-- picture -->
+        </div>
+      </div>
+
+      <div class="row px-2 py-5">
+        <div class="col-lg-4">
+          <!-- picture -->
+        </div>
+        <div class="col-lg-8">
+          <h2>Internet of Things</h2>
+          <p>
+            We consider the use of embedded connected devices in the vision of the Internet of Things as a key provider for
+            Big Data systems. As such, it is an important enabler for the large amounts of data needed to train Deep Learning
+            applications. This AI enabling technology will boost to its full potential as 5G networks are joining the global
+            wireless ecosystem. It connects our competences in distributed computing to our AI strategy.
+          </p>
+        </div>
+      </div>
+
     </div>
 
 
     <!-- Footer-->
-
-    <div class="container-lg pt-5 pl-4 pl-md-5 footer">
+    <hr>
+    <div id="footer" class="container-lg pt-5 pl-4 pl-md-5 footer">
       <div class="row pb-5">
         <div class="col-2 text-right">
           <img class="favicon-md" src="img/Atomic_BITS_favicon_color.svg" alt="favicon">
         </div>
         <div class="col-4 "></div>
-        <div class="col-4 ">
+        <div class="col-6 ">
           <div class="footer-header">Contact us</div>
-          <a class="dark" href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u0061\u0074\u006f\u006d\u0069\u0063\u0062\u0069\u0074\u0073\u002e\u0061\u0069';void 0">
+          <a class="dark"
+             href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u0061\u0074\u006f\u006d\u0069\u0063\u0062\u0069\u0074\u0073\u002e\u0061\u0069';void 0">
             <script
                 type="text/javascript">document.write('\u0069\u006e\u0066\u006f\u0040\u0061\u0074\u006f\u006d\u0069\u0063\u0062\u0069\u0074\u0073\u002e\u0061\u0069')</script>
           </a>
         </div>
       </div>
       <div class="row pb-4">
-        <div class="col-2">
+        <div class="col-3 col-md-2">
         </div>
-        <div class="col-1 col-md-2 social-media">
+        <div class="col-2 col-md-2 social-media">
           <a href="https://github.com/atomicbits" target="_blank"><img src="img/github.svg" alt="Github"></a>
           <div class="d-none d-md-block">
             <a class="dark" href="https://github.com/atomicbits" target="_blank">Github</a>
           </div>
         </div>
-        <div class="col-1 col-md-2 social-media">
+        <div class="col-2 col-md-2 social-media">
           <a href="https://www.linkedin.com/company/atomic-bits" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
           <div class="d-none d-md-block">
             <a class="dark" href="https://www.linkedin.com/company/atomic-bits" target="_blank">LinkedIn</a>
           </div>
         </div>
-        <div class="col-1 col-md-2 social-media">
+        <div class="col-2 col-md-2 social-media">
           <a href="https://twitter.com/atomic_bits" target="_blank"><img src="img/twitter.svg" alt="Twitter"></a>
           <div class="d-none d-md-block">
             <a class="dark" href="https://twitter.com/atomic_bits" target="_blank">Twitter</a>
           </div>
         </div>
-        <div class="col-7 col-md-4 privacy-cookies text-center">
+        <!-- col-3 from x-small and disappears from medium onwards-->
+        <div class="col-3 d-md-none"></div>
+        <div class="col-12 col-md-4 privacy-cookies text-center">
           <a class="dark" href="privacy-policy">Privacy & Cookies</a>
         </div>
       </div>
       <div class="row small">
-        <div class="col text-center">Atomic BITS bvba | VAT BE0837.568.373 | Sterrebeeksesteenweg 105, 3070 Kortenberg, Belgium | RPR Leuven</div>
+        <!-- https://www.vlaio.be/nl/nieuws/website-facebookpagina-van-je-bedrijf-deze-gegevens-zijn-verplicht -->
+        <div class="col text-center">Atomic BITS bvba | VAT BE0837.568.373 | Sterrebeeksesteenweg 105, 3070 Kortenberg, Belgium | RPR
+          Leuven
+        </div>
       </div>
     </div>
 
