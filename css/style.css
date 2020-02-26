@@ -1,0 +1,253 @@
+/* chosen color palette */
+/* https://coolors.co/57b6cb-cb5d57-3d5a80-98c1d9-e0fbfc */
+
+/* interesting dark color palette, the first two colors could be tried as a darker version for the Atomic BITS logo */
+/* https://coolors.co/070f27-2b0509-364156-7d4e57-d66853 */
+/* or */
+/* https://coolors.co/0b183f-4c090f-f75c03-d90368-820263 */
+/* https://coolors.co/0b183f-4c090f-386fa4-59a5d8-84d2f6 */
+/* https://coolors.co/0b183f-4c090f-33658a-86bbd8-f6ae2d */
+
+/* alternatives that didn't make it */
+/* https://coolors.co/57b6cb-586994-a2abab-b4c4ae-e5e8b6 */
+/* https://coolors.co/57b6cb-cb5d57-ddd8c4-a3c9a8-69a297 */
+
+/* Store the original bootstrap colors for future reference. */
+.original_bootstrap {
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+/* The global CSS variables. */
+:root {
+    --primary: #3d5a80; /* rgb(61, 90, 128) */
+    --secondary: #98c1d9;
+    --light: #e1fcfc;
+    --dark: #25364d;
+    --highlight: #57b6cb; /* rgb(87, 182, 203) */
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #cb5d57;
+    --main-bg-color: #F8F9FA;
+}
+
+/* An overview of the color palette. */
+.palette {
+    --color1: #57b6cb; /* highlight */
+    --color2: #cb5d57; /*  */
+    --color3: #3d5a80; /* primary */
+    --color4: #98c1d9; /* secondary */
+    --color5: #e0fbfc; /* light */
+}
+
+body {
+    background: var(--main-bg-color);
+    color: var(--dark);
+    font-family: Roboto, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 3.0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 2.5;
+    margin: 0;
+}
+
+h3 {
+    line-height: 2.6;
+    margin: 0;
+}
+
+p {
+
+}
+
+a {
+    color: var(--highlight);
+}
+
+a.dark {
+    color: var(--dark);
+}
+
+/* Larger close buttons. */
+button.close {
+    font-size: 36px
+}
+
+/* We don't like buttons with rounded corners. */
+.btn {
+    border-radius: 0;
+}
+
+/* The navigation popover container is transparent to selectively give a smaller sub-area a solid color. */
+.nav-popover {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    opacity: 0;
+    justify-content: center;
+    transition: all 100ms ease-out;
+    color: var(--primary);
+    background: transparent;
+}
+
+.nav-popover.show {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+/* remove the ugly highlight around the hamburger menu when clicked */
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+/* remove the line around the hamburger menu */
+.navbar-toggler {
+    border: 0;
+}
+
+/* The navigation choice area must have a solid background color. */
+.navbar-choice {
+    background: var(--main-bg-color);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rw-words span {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    font-size: 48px;
+    display: inline;
+    /*text-shadow: -1px -1px 0 var(--secondary), 1px -1px 0 var(--secondary), -1px 1px 0 var(--secondary), 1px 1px 0 var(--secondary);*/
+    animation: rotateWords 25s linear infinite 0s;
+}
+
+.rw-words span:nth-child(2) {
+    animation-delay: 5s;
+}
+.rw-words span:nth-child(3) {
+    animation-delay: 10s;
+}
+.rw-words span:nth-child(4) {
+    animation-delay: 15s;
+}
+.rw-words span:nth-child(5) {
+    animation-delay: 20s;
+}
+
+@keyframes rotateWords {
+    0% { opacity: 0; animation-timing-function: ease;}
+    5% { opacity: 0.9; }
+    20% { opacity: 1; }
+    22% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.imageplaceholder img {
+    height: 100%;
+    width: 100%;
+}
+
+.videoplaceholder video {
+    height: 100%;
+    width: 100%;
+}
+
+.favicon-md {
+    width: 40px;
+}
+
+/* The navigation selection list area */
+ul.navbar-selection {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+
+.attention {
+    background: var(--secondary);
+}
+
+.footer {
+    font-size: 16px;
+}
+
+.footer-header {
+    margin-bottom: 16px;
+}
+
+.privacy-cookies {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.social-media {
+    margin-top: 8px;
+    color: var(--primary);
+}
+
+.social-media img {
+    width: 20px;
+    margin-right: 5px;
+    float: left;
+}
+
+@media (max-width: 576px) {
+    /* Widen the navigation bar on small screens. */
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Make the rotating words smaller on small screens */
+    .rw-words span {
+        font-size: 24px;
+    }
+}
+
+/* Make the logo slightly smaller on small screens. */
+@media (min-width: 1px) {
+    #logo {
+        height: 40px
+    }
+}
+
+/* Normal logo size. */
+@media (min-width: 576px) {
+    #logo {
+        height: 50px
+    }
+}
